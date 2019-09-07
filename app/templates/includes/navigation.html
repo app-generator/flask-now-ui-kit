@@ -1,0 +1,65 @@
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+    <div class="container">
+      <div class="dropdown button-dropdown">
+        <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-header">App Links</a>
+          <a class="dropdown-item" href="{{ data.github  }}">Sources</a>
+          <a class="dropdown-item" href="{{ data.product }}">Product Info</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://palletsprojects.com/p/flask/">Flask</a>
+          <a class="dropdown-item" href="https://demos.creative-tim.com/now-ui-kit/index.html">Now UI Kit</a>
+        </div>
+      </div>
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="/" rel="tooltip" title="Designed by Creative Tim. Coded by AppSeed" data-placement="bottom">
+          Flask Now Ui 
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar top-bar"></span>
+          <span class="navbar-toggler-bar middle-bar"></span>
+          <span class="navbar-toggler-bar bottom-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="/assets/img/blurred-image-1.jpg">
+        <ul class="navbar-nav">
+
+          {% if current_user.is_authenticated %}
+            <li class="nav-item"><a class="nav-link" href={{ url_for('logout') }}>Logout</a></li>
+          {% else %}
+            <li class="nav-item"><a class="nav-link" href={{ url_for('login') }}>Sign In</a></li>
+          {% endif %}
+
+          <li class="nav-item">
+            <a class="nav-link" href="/profile.html">profile</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/components.html">Help</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Product Info" data-placement="bottom" href="{{ data.product }}">
+              <i class="fa fa-rocket"></i>
+              <p class="d-lg-none d-xl-none">Product</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Github Sources" data-placement="bottom" href="{{ data.github }}">
+              <i class="fab fa-github"></i>
+              <p class="d-lg-none d-xl-none">Github</p>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->

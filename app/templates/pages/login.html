@@ -1,0 +1,55 @@
+
+  <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header-image" style="background-image:url(/static/assets/img/login.jpg)"></div>
+    <div class="content">
+      <div class="container">
+        <div class="col-md-4 ml-auto mr-auto">
+          <div class="card card-login card-plain">
+
+            <form class="form" method="post" action="">
+
+              {{ form.hidden_tag() }}
+               
+              <div class="card-header text-center">
+                <div class="logo-container">
+                  <img src="/static/assets/img/now-logo.png" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+
+                {% if msg %}
+                    {{ msg | safe }}
+                {% endif %}
+
+                <br />
+
+                <div class="input-group no-border input-lg">
+                  {{ form.username(placeholder="Username", class="form-control") }}
+                </div>
+
+                <div class="input-group no-border input-lg">
+                  {{ form.password(placeholder="Password", class="form-control") }}
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <button type="submit" class="btn btn-primary btn-round btn-lg btn-block">Login</button>
+                <div class="pull-left">
+                  <h6>
+                    <a href={{ url_for('register') }} class="link">Create Account</a>
+                  </h6>
+                </div>
+                <div class="pull-right">
+                  <h6>
+                    <a href="/components.html" class="link">Need Help?</a>
+                  </h6>
+                </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include 'includes/footer.html' %}
+
+  </div>

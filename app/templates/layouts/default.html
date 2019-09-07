@@ -1,0 +1,40 @@
+<!--
+
+=========================================================
+* Now UI Kit - v1.3.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/now-ui-kit
+* Copyright 2019 Creative Tim (http://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md)
+
+* Designed by www.invisionapp.com Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% include 'includes/header.html' %}
+
+</head>
+
+<body class="{{page}}-page sidebar-collapse">
+
+  {% include 'includes/navigation.html' %}
+
+  <div class="wrapper">
+
+    {{ content | safe }}
+
+  </div>
+
+  {% include 'includes/scripts.html' %}
+
+</body>
+
+</html>
