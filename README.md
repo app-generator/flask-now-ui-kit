@@ -1,4 +1,4 @@
-# [Flask Now UI Kit](https://flask-now-ui-kit.appseed.us/)
+# [Flask Now UI Kit](https://appseed.us/apps/flask-apps/flask-now-ui-kit)
 
 Open-Source [Flask](https://palletsprojects.com/p/flask/) app enhanced with [SQLite](https://www.sqlite.org/index.html) database, authentication, [SQLAlchemy ORM](https://www.sqlalchemy.org/) and a beautiful UI - **Now UI Kit Design** by Creative-Tim.
 
@@ -46,11 +46,12 @@ $ # App is running on http://localhost:5000
 
 ## Links & Resources
 
-- [Flask Now UI Kit](https://flask-now-ui-kit.appseed.us/) - LIVE demo
+- [Flask Now UI Kit](https://flask-now-ui-kit.appseed.us/) - Live DEMO
+- [Flask Now UI Kit](https://appseed.us/apps/flask-apps/flask-now-ui-kit) - product page
 - [Flask](https://palletsprojects.com/p/flask/) - offcial website
 - A curated list with production-ready [Flask Apps](https://appseed.us/apps/flask-apps)
 
 <br />
 
 ---
-[Flask Now UI Kit](https://flask-now-ui-kit.appseed.us/) - provided by **AppSeed**
+# [Flask Now UI Kit](https://appseed.us/apps/flask-apps/flask-now-ui-kit) - provided by **AppSeed**
