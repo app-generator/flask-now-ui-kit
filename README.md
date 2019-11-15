@@ -110,8 +110,8 @@ The boilerplate code is built with a modular structure that follows the recommen
 
 ## Links & Resources
 
-- [Flask Now UI Kit](https://appseed.us/apps/flask-apps/flask-material-kit) - Product page
-- [Flask Now UI Kit](https://docs.appseed.us/apps/flask-apps/flask-material-kit) - documentation
+- [Flask Now UI Kit](https://appseed.us/apps/flask-apps/flask-now-ui-kit) - Product page
+- [Flask Now UI Kit](https://docs.appseed.us/apps/flask-apps/flask-now-ui-kit) - documentation
 - [Flask Framework](https://www.palletsprojects.com/p/flask/) - Offcial website
 - [Flask - Open-Source Boilerplates](https://dev.to/sm0ke/flask-boilerplate-open-source-apps-built-with-automation-tools-4925) - A popular article published on Dev.to platform
 
