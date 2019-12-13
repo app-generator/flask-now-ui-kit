@@ -1,0 +1,77 @@
+{% extends "layouts/base-site.html" %}
+
+{% block title %} Login {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block body_class %} login-page {% endblock body_class %} 
+
+{% block content %}
+
+  <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header-image" style="background-image:url(/static/assets/img/login.jpg)"></div>
+    <div class="content">
+      <div class="container">
+        <div class="col-md-4 ml-auto mr-auto">
+          <div class="card card-login card-plain">
+
+            <form class="form" method="post" action="">
+        
+              {{ form.hidden_tag() }}
+
+              <div class="card-header text-center">
+                <div class="logo-container">
+                  <img src="/static/assets/img/now-logo.png" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="description text-center">
+                  {% if msg %}
+                    {{ msg | safe }}
+                  {% else %}
+                    Sign in to continue
+                  {% endif %}                    
+                </p>    
+                <div class="input-group no-border input-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="now-ui-icons users_circle-08"></i>
+                    </span>
+                  </div>
+                  {{ form.username(class="form-control") }}
+                </div>
+                <div class="input-group no-border input-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="now-ui-icons ui-1_lock-circle-open"></i>
+                    </span>
+                  </div>
+                  {{ form.password(class="form-control", type="password") }}
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <button type="submit" name="login" class="btn btn-primary btn-round btn-lg btn-block">Login</button>
+                <div class="pull-left">
+                  <h6>
+                    <a href={{ url_for('register') }} class="link">Create Account</a>
+                  </h6>
+                </div>
+                <div class="pull-right">
+                  <h6>
+                    <a href="https://appseed.us/support" class="link">Get Support</a>
+                  </h6>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include 'includes/footer-fullscreen.html' %}
+
+{% endblock content %}
+  
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
