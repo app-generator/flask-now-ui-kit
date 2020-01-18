@@ -11,7 +11,7 @@
 
 <br />
 
-![Flask Now UI Kit - Open-Source Web App.](https://raw.githubusercontent.com/app-generator/static/master/products/flask-now-ui-kit-intro.gif)
+![Flask Now UI Kit - Open-Source Web App.](https://raw.githubusercontent.com/app-generator/static/master/products/flask-now-ui-kit-screen.png)
 
 <br />
 
