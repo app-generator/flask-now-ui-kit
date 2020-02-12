@@ -30,7 +30,9 @@
                   {% if msg %}
                     {{ msg | safe }}
                   {% else %}
-                    Sign in to continue
+                    Use default credentials: <strong>test / pass</strong>
+                    <br />
+                    OR <a href={{ url_for('register') }} >create your own user</a>   
                   {% endif %}                    
                 </p>    
                 <div class="input-group no-border input-lg">

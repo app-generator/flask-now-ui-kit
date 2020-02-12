@@ -31,7 +31,9 @@
                   {% if msg %}
                     {{ msg | safe }}
                   {% else %}
-                    Add ypour credentials
+                    Add your credentials 
+                    <br />
+                    OR <a href={{ url_for('login') }} >authenticate</a> with an existing account.
                   {% endif %}                    
                 </p>    
 
